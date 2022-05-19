@@ -84,6 +84,10 @@ p, a {
     padding: 0em 0em 0em 3em;
 }
 
+.logo:hover {                   /* <------ aanpassen */
+    stroke-dashoffset: 0;
+}
+
 .st0 {
     fill:none;
     stroke:#0309FE;
@@ -92,18 +96,18 @@ p, a {
     stroke-linejoin:round;
     stroke-miterlimit:10;
     stroke-dasharray: 90; 
-    stroke-dashoffset: 100;
-    animation: move 3s linear infinite alternate-reverse;
+    stroke-dashoffset: 900;
+    animation: move 40s linear infinite alternate-reverse;
 }
 
 @keyframes move {
     100% {
-        stroke-dashoffset: 1;
+        stroke-dashoffset: 10;
         animation: ease-in-out;
     }
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
     .logo {
         padding: 0em 3em 0em 1em;
     }
@@ -138,7 +142,7 @@ p, a {
     z-index: -1;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
     h1 {
         font-size: 32pt;
     }
@@ -157,7 +161,6 @@ p, a {
         grid-column: 2;
     }
 }
-
 
 /*----------Sections----------*/
 
@@ -179,7 +182,7 @@ p, a {
     border-left: 1px solid black;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
     .contentArea {
         grid-template-rows: 2;
         padding: 1em 0em 0em 0em;
@@ -233,7 +236,7 @@ p, a {
     max-height: 860px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1100px) {
     .posters {
         grid-template-rows: repeat(4 1fr);
         grid-template-rows: repeat(4 1fr);
