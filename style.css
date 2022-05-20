@@ -195,7 +195,7 @@ p, a {
 @media only screen and (max-width: 1100px) {
     .contentArea {
         grid-template-rows: 2;
-        grid-template-rows: 250px;
+        grid-template-rows: 310px;
         padding: 1em 0em 0em 0em;
         max-height: fit-content;
     }
@@ -250,7 +250,6 @@ p, a {
 @media only screen and (max-width: 1100px) {
     .posters {
         grid-template-rows: repeat(4 1fr);
-        grid-template-rows: repeat(4 1fr);
         padding: 0em 0em 0em 0em;
     }
 
@@ -284,7 +283,6 @@ p, a {
     grid-template-columns: 3fr 4fr 4fr 2fr;
     grid-template-rows: 1fr 1fr;
     grid-auto-flow: row;
-    grid-template-rows: 290px;
     border-top: 1px solid black;
 }
 
@@ -312,6 +310,32 @@ p, a {
     border-right: 1px solid black;
 }
 
+@media only screen and (max-width: 1100px) {   /* <--- hier*/
+    .pinqponq {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(4 1fr);
+        padding: 0em 0em 0em 0em;
+    }
+    .itemA2 {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+        max-height: 200px;
+    }
+    .itemB3 {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .itemC3 {
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .itemD3 {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+        border: none;
+    }
+}
+
 /*----------About----------*/
 
 .about {
@@ -336,4 +360,8 @@ p, a {
 .itemB4 {
     grid-column: 2;
     border-right: 1px solid black;
+}
+
+.itemC4 {
+    grid-column: 3;
 }
