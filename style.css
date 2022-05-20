@@ -84,7 +84,7 @@ p, a {
 
 .logo {
     max-width: 20em;
-    padding: 0em 0em 0em 3em;
+    padding: 0em 0em 0em 1em;
 }
 
 .logo:hover {                   /* <------ aanpassen */
@@ -286,27 +286,26 @@ p, a {
     border-top: 1px solid black;
 }
 
+.pinqponq img {
+    width: 500;
+    height: 329px;
+    object-fit: cover;
+}
+
 .itemB3 {
     grid-column: 2;
     grid-row: 1;
-    max-height: 600px;
-    color: green;
-    background-color: green;
+    background-color: aquamarine;
 }
 
 .itemC3 {
     grid-column: 3;
     grid-row: 1;
-    max-height: 600px;
-    color: red;
-    background-color: red;
+    background-color: grey;
 }
-
 
 .itemD3 {
     grid-column: 2 / span 2;
     grid-row: 2;
-    max-height: 600px;
-    color: #212427;
     background-color: #212427;
 }
