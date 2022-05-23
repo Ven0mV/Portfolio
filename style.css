@@ -23,7 +23,6 @@ html {
 
 img {
     max-width: 100%;
-    height: auto;
 }
 
 h1 {
@@ -45,7 +44,7 @@ h2 {
 }
 
 p, a {
-    padding: 1em 0.5em 0em 1em;
+    padding: 1em 1em 0em 1em;
 
     font-family: var(--pfont);
     font-style: normal;
@@ -139,9 +138,11 @@ p, a {
 }
 
 .titleimg {
+    display: grid;
     grid-column: 3 / span 2;
     grid-row: 1;
     z-index: -1;
+    max-height: 644px;
 }
 
 @media only screen and (max-width: 1100px) {
@@ -186,6 +187,7 @@ p, a {
 
 .itemB {
     border-right: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .itemC {
@@ -237,10 +239,12 @@ p, a {
 
 .itemB2 {
     border-right: 1px solid black;
+    max-height: 862px;
 }
 
 .itemC2 {
     border-right: 1px solid black;
+    max-height: 862px;
 }
 
 .posterimg {
@@ -296,12 +300,14 @@ p, a {
     grid-column: 2;
     grid-row: 1;
     border-right: 1px solid black;
+    max-height: 335px;
 }
 
 .itemC3 {
     grid-column: 3;
     grid-row: 1;
     border-right: 1px solid black;
+    max-height: 335px;
 }
 
 .itemD3 {
